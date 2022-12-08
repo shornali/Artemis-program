@@ -39,7 +39,7 @@ GLfloat speed3 = 0.0f;
 GLfloat s=0.5;
 
 
-void update(int value) { ////////////////////////////////////////////////////////////////////////fly
+void update(int value) { ////////////////////////////////////////////////////////fly
 
     if(position >1.0f) ////if(position <1){position = -0.9f; position -=speed;}
         position = 1.0f;
@@ -50,7 +50,7 @@ glutPostRedisplay();
 glutTimerFunc(100, update, 0);
 }
 
-void update1(int value1) {/////////////////////////////////////////////////////////////////////// space
+void update1(int value1) {/////////////////////////////////////////// space
 
     if(space==false)
     {if(position1 >1.0)
@@ -84,7 +84,7 @@ glutPostRedisplay();
 glutTimerFunc(100, update3, 0);
 }
 
-void update4(int value4) {/////////////////////////////////////////////////////////////////////// space
+void update4(int value4) {///////////////////////////////////////////////////// space
 
     if(mover==false)
     {if(position3 <-1.5)
@@ -536,7 +536,7 @@ glBegin(GL_QUADS);
     glEnd();
 
 
-  //////////////////////////////////////////////////////////rocket
+  ///////////////////////////////rocket
 glPushMatrix();
 
    glTranslatef(0,-position, 0.0f);
@@ -642,7 +642,7 @@ glPushMatrix();
    glEnd();
 
 
-   ///////////////////////////////////////////RIGHT WING
+   //////////////////////////////RIGHT WING
    glBegin(GL_POLYGON);
    glColor3ub(230,230,230);
 
@@ -688,7 +688,7 @@ glPushMatrix();
    glEnd();
 glPopMatrix();
 
-////////////////////////////////////////////////////////////////ROCKET LAUNCHER BASE
+//////////////////////////////////////////ROCKET LAUNCHER BASE
 glPushMatrix();
 
    glBegin(GL_POLYGON);
@@ -701,7 +701,7 @@ glPushMatrix();
 
 glPopMatrix();
 
-/////////////////////////////////////////////////////////////////////////LAUNCH PAD ROCKET HOLDER
+//////////////////////////////////////////////LAUNCH PAD ROCKET HOLDER
 
    glPushMatrix();
 
